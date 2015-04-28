@@ -1,5 +1,7 @@
 # Assembly
 
+> Assembly is a five exploration of art and social practice.
+
 ## Getting Started
 
 You'll need to add two environment-specific files to your project. Please request them from a project administrator.
