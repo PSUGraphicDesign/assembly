@@ -1,0 +1,10 @@
+.DS_Store
+/site/accounts
+/site/cache
+/site/config/config.php
+/content
+/thumbs/*
+/assets/.sass-cache
+/assets/css
+/assets/avatars
+.htaccess
