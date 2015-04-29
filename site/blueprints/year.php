@@ -25,6 +25,6 @@ fields:
   title:
     label: Title
     type:  text
-  text:
-    label: Text
-    type:  textarea
+  year:
+    label: Year
+    type:  number
