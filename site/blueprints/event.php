@@ -11,9 +11,11 @@ fields:
   time_begin:
     label: Start Time 
     type: time
+    width: 1/2
   time_end:
     label: End Time 
     type: time
+    width: 1/2
   location:
     label: location
     type: text
