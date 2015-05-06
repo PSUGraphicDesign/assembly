@@ -1,7 +1,8 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Presenters
-pages: 
+title: Presenter
+pages:
+  hide: true
 files: false
 fields:
   title: 
