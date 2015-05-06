@@ -5,7 +5,7 @@ pages:
   build:
     - title: Schedule
       uid: schedule
-      template: day
+      template: schedule
 
     - title: Projects
       uid: projects
