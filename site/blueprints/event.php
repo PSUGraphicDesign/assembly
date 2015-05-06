@@ -11,10 +11,12 @@ fields:
   time_begin:
     label: Start Time 
     type: time
+    interval: 15
     width: 1/2
   time_end:
     label: End Time 
     type: time
+    interval: 15
     width: 1/2
   location:
     label: location
