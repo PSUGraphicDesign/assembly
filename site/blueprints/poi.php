@@ -1,19 +1,20 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Points of Interest
-pages: 
+title: Point of Interest
+pages:
+  hide: true
 files: false
 fields:
   title: 
-    label: Points of Interest
+    label: Place Name
     type: text
   category:
     label: Category
     type: select
     options:
-      food: Food
-      fun: Fun
-      culture: Culture
+      Food: Food
+      Fun: Fun
+      Culture: Culture
   description:
     label: Description
     type: textarea
