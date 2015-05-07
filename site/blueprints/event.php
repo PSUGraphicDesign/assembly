@@ -19,20 +19,11 @@ fields:
     interval: 15
     width: 1/2
   location:
-    label: location
+    label: Location
     type: text
   presenter:
     label: Presenter
-    type: select
-    options: query
-    query: 
-      page: ../../presenters 
-      fetch: children
-      text: {{title}}
+    type: page
   project:
     label: Project
-    type: select
-    options: query
-    query: 
-      page: ../../presenters 
-      fetch: children
+    type: page
