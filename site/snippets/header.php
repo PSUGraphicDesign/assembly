@@ -11,3 +11,13 @@
 
 </head>
 <body>
+  <header>
+    <section>
+      <article>
+        <div class="column full">
+          <h1><?= $site->title()->html() ?></h1>
+          <?= snippet('menu') ?>
+        </div>
+      </article>
+    </section>
+  </header>

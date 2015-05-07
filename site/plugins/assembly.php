@@ -16,8 +16,11 @@
     return join($classes, ' ');
   }
 
-  public static function random_color () {
-    $colors = ['orange', 'green', 'pink'];
-    return $colors[array_rand($colors)];
+  public static function link_for ( $page, $title ) {
+    return html::a($page->url(), $title, ['class' => ($page->isOpen() ? 'active' : null)]);
+  }
+
+  public static function current_year () {
+    return page(date('Y'));
   }
 }
