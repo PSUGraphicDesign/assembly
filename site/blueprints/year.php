@@ -28,3 +28,33 @@ fields:
   year:
     label: Year
     type:  number
+  description:
+    label: Description
+    type: textarea
+  date:
+    label: Conference Duration
+    type: text
+  present:
+    label: Presenting at Assembly
+    type: textarea
+  presentcontact:
+    label: Presenter Contact
+    type: textarea
+  footer_sponsors:
+    label: Sponsors
+    type: structure
+    entry: >
+      {{sponsor}}
+    fields:
+      sponsor:
+        label: Sponsor Name
+        type: text
+  footer_links:
+    label: Links
+    type: structure
+    entry : >
+      {{link}}
+    fields:
+      link:
+        label: Link
+        type: URL
