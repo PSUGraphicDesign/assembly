@@ -15,7 +15,7 @@
     <section>
       <article>
         <div class="column full">
-          <h1><?= $site->title()->html() ?></h1>
+          <h1><?= html::a($site->url(), $site->title()->html()) ?></h1>
           <?= snippet('menu') ?>
         </div>
       </article>
