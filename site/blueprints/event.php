@@ -5,16 +5,16 @@ pages:
   hide: true
 files: true
 fields:
-  title: 
+  title:
     label: Title
     type: text
   time_begin:
-    label: Start Time 
+    label: Start Time
     type: time
     interval: 15
     width: 1/2
   time_end:
-    label: End Time 
+    label: End Time
     type: time
     interval: 15
     width: 1/2
@@ -23,7 +23,13 @@ fields:
     type: text
   presenter:
     label: Presenter
-    type: page
+    type: select
+    options: query
+    query:
+      page: ../../../presenters
   project:
     label: Project
-    type: page
+    type: select
+    options: query
+    query:
+      page: ../../../projects
