@@ -18,9 +18,13 @@ fields:
     type: time
     interval: 15
     width: 1/2
+  description:
+    label: Description
+    type: textarea
+    help: Provide any additional info that the associated Presenter and Project won't cover. Things like details about transportation, timing, etc. go here.
   location:
     label: Location
-    type: text
+    type: place
   presenter:
     label: Presenter
     type: select

@@ -40,7 +40,7 @@
             <?= $event->time_begin() ?>&ndash;<?= $event->time_end() ?>
           </div>
           <div class="column three-quarters">
-            <?= $event->title() ?>
+            <?= html::a($event->url(), $event->title()) ?>
           </div>
         <? } ?>
       </article>
