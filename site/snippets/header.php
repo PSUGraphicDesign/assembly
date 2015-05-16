@@ -15,7 +15,7 @@
     <section>
       <article>
         <div class="column full">
-          <h1><?= html::a($site->url(), $site->title()->html()) ?></h1>
+          <img src="assets/images/Assembly_Logo.gif">
           <?= snippet('menu') ?>
         </div>
       </article>
