@@ -15,7 +15,9 @@
     <section>
       <article>
         <div class="column full">
-          <img src="assets/images/Assembly_Logo.gif">
+          <div class="logo">
+            <img src="assets/images/Assembly_Logo.gif">
+          </div> 
           <?= snippet('menu') ?>
         </div>
       </article>
