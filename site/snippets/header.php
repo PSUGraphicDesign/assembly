@@ -14,10 +14,12 @@
   <header>
     <section>
       <article>
-        <div class="column full">
+        <div class="column half">
           <div class="logo">
             <img src="assets/images/Assembly_Logo.gif">
           </div> 
+        </div>
+        <div class="column half">
           <?= snippet('menu') ?>
         </div>
       </article>
