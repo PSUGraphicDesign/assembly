@@ -34,7 +34,7 @@ fields:
   description:
     label: Description
     type: textarea
-  date:
+  date_text:
     label: Conference Duration
     type: text
   location:
@@ -46,7 +46,7 @@ fields:
   presentcontact:
     label: Presenter Contact
     type: textarea
-  footer_sponsors:
+  sponsors:
     label: Sponsors
     type: structure
     entry: >
@@ -55,12 +55,22 @@ fields:
       sponsor:
         label: Sponsor Name
         type: text
-  footer_links:
+      url:
+        label: URL
+        type: url
+      logo:
+        label: Logo
+        type: select
+        options: images
+  links:
     label: Links
     type: structure
     entry : >
       {{link}}
     fields:
+      title:
+        label: Title
+        type: text
       link:
         label: Link
         type: URL
