@@ -16,11 +16,13 @@
       <article>
         <div class="column half">
           <div class="logo">
-            <img src="assets/images/Assembly_Logo.gif">
+            <img src="../assets/images/Assembly_Logo.gif">
           </div> 
         </div>
         <div class="column half">
-          <?= snippet('menu') ?>
+          <div class="menu">
+            <?= snippet('menu') ?>
+          </div>
         </div>
       </article>
     </section>
