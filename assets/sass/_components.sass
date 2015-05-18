@@ -3,13 +3,37 @@
 header
   background-color: $color-blue
 
+.intro
+  text-align: center
+  color: $color-white
+
+  h1
+    +outline-text
+    text-transform: uppercase
+    letter-spacing: .1em
+
+  h2
+    text-transform: uppercase
+    letter-spacing: .15em
+
+  article
+    padding-top: 0
+    padding-bottom: 5%
+
+.description
+  background-color: $color-white 
+  p
+    font-size: 2em
+
 .menu
+  text-align: right
+  
   ul
     list-style: none
 
   li
     display: inline-block
-    padding-left: 10px
+    padding-left: 10%
 
   a
     color: $color-white
@@ -20,3 +44,6 @@ header
 
   a:hover
     border-bottom: 1px solid $color-white
+
+.intro
+  background-color: $color-blue
