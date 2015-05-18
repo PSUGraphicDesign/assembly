@@ -28,6 +28,9 @@ fields:
   year:
     label: Year
     type:  number
+  introduction:
+    label: Introduction
+    type: text
   description:
     label: Description
     type: textarea
