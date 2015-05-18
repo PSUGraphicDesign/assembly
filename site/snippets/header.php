@@ -8,7 +8,7 @@
   <title><?= AB::site_title() ?></title>
 
   <?= css('/assets/css/assembly.css') ?>
-  <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <?= css('http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic') ?>
 </head>
 <body>
   <header>
