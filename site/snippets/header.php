@@ -7,7 +7,7 @@
 
   <title><?= AB::site_title() ?></title>
 
-  <?= css('assets/css/assembly.css') ?>
+  <?= css('/assets/css/assembly.css') ?>
   <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -16,7 +16,7 @@
       <article>
         <div class="column half">
           <div class="logo">
-            <img src="../assets/images/Assembly_Logo.gif">
+            <img src="/assets/images/Assembly_Logo.gif">
           </div> 
         </div>
         <div class="column half">
