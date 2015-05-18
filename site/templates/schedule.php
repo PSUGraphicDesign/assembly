@@ -23,6 +23,9 @@
   <section class="map">
     <article>
       <div class="column full">
+
+        <iframe src="https://www.google.com/maps/d/embed?mid=z5uBg3oIPD4o.kr3lKCQz9q9I" width="640" height="480"></iframe>
+        
         The map is a big to-do, right now. It'll be ok though.
       </div>
     </article>

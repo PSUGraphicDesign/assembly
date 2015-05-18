@@ -55,6 +55,7 @@ fields:
       sponsor:
         label: Sponsor Name
         type: text
+        required: true
       url:
         label: URL
         type: url
