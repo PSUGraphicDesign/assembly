@@ -37,6 +37,9 @@ fields:
   date:
     label: Conference Duration
     type: text
+  location:
+    label: Location
+    type: text
   present:
     label: Presenting at Assembly
     type: textarea
