@@ -16,7 +16,7 @@
       <article>
         <div class="column half">
           <div class="logo">
-            <img src="/assets/images/Assembly_Logo.gif">
+            <a href="/"><img src="/assets/images/Assembly_Logo.gif"></a>
           </div> 
         </div>
         <div class="column half">
