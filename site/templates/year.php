@@ -5,11 +5,11 @@
     <article>
       <div class="column full">
 
-        <h2><?= $page->date_text()->kirbytext() ?></h2>
+        <h3><?= $page->date_text()->kirbytext() ?></h3>
 
         <h1><?= $page->introduction()->kirbytext() ?></h1>
 
-        <h2><?= $page->location()->kirbytext() ?></h2>
+        <h3><?= $page->location()->kirbytext() ?></h3>
       </div>
     </article>
   </section>

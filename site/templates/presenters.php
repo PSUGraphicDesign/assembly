@@ -1,12 +1,13 @@
 <? snippet('header') ?>
 
 <main>
-  <section class="presenter-list">
+  <section class="intro">
     <article>
-      <div class="column full">
-        <h2><?= $page->title()->html() ?></h2>
-      </div>
+      <h2><?= $page->title()->html() ?></h2>
     </article>
+  </section>
+
+  <section class="presenter-list">
     <article>
       <div class="column full">
         <ul>
