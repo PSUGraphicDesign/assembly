@@ -11,7 +11,10 @@
       <div class="column full">
         <ul>
           <? foreach ( $projects as $project ) { ?>
-            <li><?= html::a($project->url(), $project->title()) ?></li>
+
+            <li><?= $project->title()->kirbytext() ?>
+              <?= $project->description()->kirbytext() ?></li>
+
           <? } ?>
         </ul>
       </div>
