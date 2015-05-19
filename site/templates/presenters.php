@@ -11,7 +11,13 @@
       <div class="column full">
         <ul>
           <? foreach ( $presenters as $presenter ) { ?>
-            <li><?= html::a($presenter->url(), $presenter->title()) ?></li>
+            <li><?= $presenter->title()->kirbytext() ?>
+
+              <?= $presenter->bio()->kirbytext() ?>
+
+              <?= $presenter->website()->kirbytext() ?>
+
+              <?= $presenter->contact()->kirbytext() ?></li>
           <? } ?>
         </ul>
       </div>
