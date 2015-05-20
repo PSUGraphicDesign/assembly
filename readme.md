@@ -1,6 +1,6 @@
 # Assembly
 
-> Assembly is a five exploration of art and social practice.
+> Assembly is a five-day exploration of art and social practice.
 
 ## Getting Started
 
