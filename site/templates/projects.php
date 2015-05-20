@@ -13,7 +13,7 @@
         <ul>
           <? foreach ( $projects as $project ) { ?>
 
-            <li><?= $project->title()->kirbytext() ?>
+            <li><h3><?= $project->title()->kirbytext() ?></h3>
               <?= $project->description()->kirbytext() ?></li>
 
           <? } ?>

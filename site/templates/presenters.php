@@ -12,7 +12,7 @@
       <div class="column full">
         <ul>
           <? foreach ( $presenters as $presenter ) { ?>
-            <li><?= $presenter->title()->kirbytext() ?>
+            <li><h3><?= $presenter->title()->kirbytext() ?></h3>
 
               <?= $presenter->bio()->kirbytext() ?>
 

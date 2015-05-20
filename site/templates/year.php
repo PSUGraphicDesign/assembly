@@ -2,7 +2,7 @@
 
 <main>
   <section class="intro">
-    <article>
+    <article id="intro">
       <div class="column full">
 
         <h3><?= $page->date_text()->kirbytext() ?></h3>
@@ -18,7 +18,9 @@
     <article>
       <div class="column full">
 
-          <p><?= $page->description()->kirbytext() ?></p>
+          <h3><?= $page->description()->kirbytext() ?></h3>
+
+          <p><?= $page->small_description()->kirbytext() ?></p>
 
       </div>
     </article>

@@ -39,11 +39,8 @@ fields:
   location:
     label: Location
     type: text
-  present:
-    label: Presenting at Assembly
-    type: textarea
-  presentcontact:
-    label: Presenter Contact
+  small_description:
+    label: Sub Description
     type: textarea
   sponsors:
     label: Sponsors
