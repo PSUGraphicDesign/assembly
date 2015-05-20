@@ -23,4 +23,18 @@
   public static function current_year () {
     return page(date('Y'));
   }
+
+  public static function contextual_year () {
+    if ( page()->intendedTemplate() == 'year' ) {
+      $year = page();
+    } else {
+      $year = page()->parents()->findBy('intendedTemplate', 'year');
+    }
+
+    if ( $year ) {
+      return $year;
+    } else {
+      return static::current_year();
+    }
+  }
 }
