@@ -9,6 +9,9 @@
 
   <?= css('/assets/css/assembly.css') ?>
   <?= css('http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic') ?>
+
+  <?= js('https://maps.googleapis.com/maps/api/js?v=3.exp') ?>
+  <?= js('/assets/js/assembly.js') ?>
 </head>
 <body>
   <header>
