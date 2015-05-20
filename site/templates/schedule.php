@@ -23,10 +23,7 @@
   <section class="map">
     <article>
       <div class="column full">
-
-        <iframe src="https://www.google.com/maps/d/embed?mid=z5uBg3oIPD4o.kr3lKCQz9q9I" width="100%" height="500"></iframe>
-        <br>
-        The map is a big to-do, right now. It'll be ok though.
+        <div data-center-lat="<?= c::get('place.defaults.lat') ?>" data-center-lng="<?= c::get('place.defaults.lng') ?>" data-zoom="<?= c::get('place.defaults.zoom') ?>" id="map-canvas" class="map-canvas"></div>
       </div>
     </article>
   </section>
