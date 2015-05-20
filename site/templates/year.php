@@ -20,6 +20,16 @@
 
           <h3><?= $page->description()->kirbytext() ?></h3>
 
+      </div>
+    </article>
+  </section>
+
+    <div class="break"></div>
+
+  <section class="small_description">
+    <article>
+      <div class="column full">
+
           <p><?= $page->small_description()->kirbytext() ?></p>
 
       </div>
