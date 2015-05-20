@@ -13,12 +13,11 @@
         <ul>
           <? foreach ( $presenters as $presenter ) { ?>
             <li><h3><?= $presenter->title()->kirbytext() ?></h3>
-
+              <?= $presenter->website()->kirbytext() ?>
+              <?= $presenter->contact()->kirbytext() ?>
               <?= $presenter->bio()->kirbytext() ?>
 
-              <?= $presenter->website()->kirbytext() ?>
-
-              <?= $presenter->contact()->kirbytext() ?></li>
+              </li>
           <? } ?>
         </ul>
       </div>
