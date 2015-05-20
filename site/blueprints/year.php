@@ -49,7 +49,7 @@ fields:
     label: Sponsors
     type: structure
     entry: >
-      {{sponsor}}
+      <a href="{{url}}">{{name}}</a>
     fields:
       name:
         label: Sponsor Name
