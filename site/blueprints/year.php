@@ -19,7 +19,6 @@ pages:
       uid: area-guide
       template: area-guide
 
-
 files: true
 fields:
   title:
@@ -52,7 +51,7 @@ fields:
     entry: >
       {{sponsor}}
     fields:
-      sponsor:
+      name:
         label: Sponsor Name
         type: text
         required: true
@@ -64,9 +63,9 @@ fields:
         type: select
         options: images
   links:
-    label: Links
+    label: Footer Links
     type: structure
-    entry : >
+    entry: >
       {{link}}
     fields:
       title:
