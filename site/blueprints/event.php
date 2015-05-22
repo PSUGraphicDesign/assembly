@@ -31,9 +31,16 @@ fields:
     options: query
     query:
       page: ../../../presenters
+  contextualname:
+    label: Project Presenters and Collaborators
+    type: text
   project:
     label: Project
     type: select
     options: query
     query:
       page: ../../../projects
+  illustration:
+    label: Illustration
+    type: select
+    options: images
