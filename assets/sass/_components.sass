@@ -31,7 +31,7 @@ header
   background-color: $color-white 
   p
     font-size: 1.5em
-    padding: 3rem 0
+    padding: 1.5rem 0
 
 
 .small_description
@@ -39,7 +39,7 @@ header
   color: $color-blue
   p
     font-size: 1.25em 
-    padding: 2rem 0
+    padding: .5rem 0
 
 .menu
   text-align: right
@@ -65,6 +65,7 @@ header
 
 li
   list-style: none
+  padding-bottom: 2rem
 
 .map-canvas
   width: 100%
@@ -76,11 +77,45 @@ li
   height: 15px
   border: 1.25px solid $color-blue
   margin: 0 auto
-  -webkit-transform: rotate(10deg)
-  -moz-transform: rotate(10deg)
+  //-webkit-transform: rotate(10deg)
+  //-moz-transform: rotate(10deg)
 
+.smallbreak
+  width: 50px
+  height: 15px
+  border: 1.25px solid $color-blue
+  margin: 0 auto
+
+//Projects
+
+.projectname
+  vertical-align: top
+
+//Schedule
+
+.daynav
+  text-align: center
+  text-transform: uppercase
+  letter-spacing: .1em
+  border: 1px solid $color-lightblue
+
+.eventschedule
+  a
+    text-decoration: none
+    font-weight: 700
+  padding: 1rem 0
+
+  a:hover
+    border-bottom: 1px solid $color-black
+
+
+.timeschedule
+  color: $color-grey
+  padding: 1rem 0
+  
 
 // Footer
-  border-top: 1px solid $color-lightblue
-  color: $color-blue
+footer
+  background-color: $color-grey
+  color: $color-white
 
