@@ -9,18 +9,19 @@
 
   <section class="presenter-list">
     <article>
-      <div class="column full">
+      
         <ul>
           <? foreach ( $presenters as $presenter ) { ?>
-            <li><h3><?= $presenter->title()->kirbytext() ?></h3>
-              <?= $presenter->website()->kirbytext() ?>
-              <?= $presenter->contact()->kirbytext() ?>
+          <div class="column half">
+            <li><h4><?= $presenter->title()->kirbytext() ?></h4>
               <?= $presenter->bio()->kirbytext() ?>
-
+              <?= $presenter->website()->kirbytext() ?>
               </li>
+              <div class="smallbreak"></div>
+            </div>
           <? } ?>
         </ul>
-      </div>
+
     </article>
   </section>
 </main>

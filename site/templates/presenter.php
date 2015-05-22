@@ -4,7 +4,7 @@
   <section class="presenter-details">
     <article>
       <div class="column full">
-        <h2><?= $page->title()->html() ?></h2>
+        <h3><?= $page->title()->html() ?></h3>
       </div>
     </article>
     <article>
