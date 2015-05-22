@@ -12,11 +12,11 @@
     <article class="centered-layout">
       <? foreach ( $days as $day ) { ?>
         <div class="column sixth">
-          <?= $day->title()->html() ?>
+          <div class="daynav"><?= $day->title()->html() ?></div>
         </div>
       <? } ?>
       <div class="column sixth">
-        All
+        <div class="daynav">All</div>
       </div>
     </article>
   </section>
@@ -31,16 +31,20 @@
     <section class="day">
       <article class="day-banner">
         <div class="column full">
-          <h3><?= $day->date('l, M jS') ?></h3>
+          <h4><?= $day->date('l, M jS') ?></h4>
         </div>
       </article>
       <article class="events">
         <? foreach ( $day->events() as $event ) { ?>
           <div class="column quarter">
-            <?= $event->time_begin() ?>&ndash;<?= $event->time_end() ?>
+            <div class="timeschedule"><?= $event->time_begin() ?>&ndash;<?= $event->time_end() ?></div>
           </div>
           <div class="column three-quarters">
-            <?= html::a($event->url(), $event->title()) ?>
+            <div class="eventschedule"><?= html::a($event->url(), $event->title()) ?>
+            <?= $event->contextualname()->kirbytext() ?></div>
+           
+
+            
           </div>
         <? } ?>
       </article>
