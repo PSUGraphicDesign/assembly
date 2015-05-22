@@ -13,11 +13,16 @@
       </div>
       <div class="column third metadata">
         <dl>
-          <dt>Presenter</dt>
-          <dd><?= html::a($presenter->url(), $presenter->title()) ?></dd>
 
-          <dt>Project</dt>
-          <dd><?= html::a($project->url(), $project->title()) ?></dd>
+          <dt>Presenters</dt>
+          <dd><?= $page->contextualname()->html()?></dd>
+
+          <dt>Time</dt>
+          <dd><?= $page->time_begin()->html()?>–<?= $page->time_end()->html()?></dd>
+
+          <dt>Location</dt>
+          <dd><?= $page->location()->html()?></dd>
+
         </dl>
       </div>
     </article>
