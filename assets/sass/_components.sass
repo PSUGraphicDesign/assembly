@@ -58,10 +58,12 @@ header
     text-transform: uppercase
     letter-spacing: .1em
     font-size: .8em
+    padding: 5px
 
 
   a:hover
-    border-bottom: 1px solid $color-white
+    background-color: $color-white
+    color: $color-blue
 
 li
   list-style: none
@@ -93,29 +95,39 @@ li
 
 //Schedule
 
+.eventblock
+  padding-bottom: 1.5rem
+
 .daynav
   text-align: center
   text-transform: uppercase
   letter-spacing: .1em
-  border: 1px solid $color-lightblue
+  font-size: 1rem
+  background-color: $color-lightblue
+  color: $color-white
+  padding: .8rem 0
 
 .eventschedule
   a
     text-decoration: none
     font-weight: 700
-  padding: 1rem 0
 
   a:hover
     border-bottom: 1px solid $color-black
 
 
 .timeschedule
+  color: $color-lightblue
+
+.presentername
   color: $color-grey
-  padding: 1rem 0
+
+  
   
 
 // Footer
 footer
-  background-color: $color-grey
+  background-color: $color-lightblue
   color: $color-white
+  bottom: 0
 

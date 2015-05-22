@@ -33,6 +33,7 @@
         <div class="column full">
           <h4><?= $day->date('l, M jS') ?></h4>
         </div>
+        <div class="smallbreak"></div>
       </article>
       <article class="events">
         <? foreach ( $day->events() as $event ) { ?>
@@ -40,9 +41,10 @@
             <div class="timeschedule"><?= $event->time_begin() ?>&ndash;<?= $event->time_end() ?></div>
           </div>
           <div class="column three-quarters">
-            <div class="eventschedule"><?= html::a($event->url(), $event->title()) ?>
-            <?= $event->contextualname()->kirbytext() ?></div>
-           
+            <div class="eventblock">
+            <div class="eventschedule"><?= html::a($event->url(), $event->title()) ?></div>
+            <div class="presentername"><?= $event->contextualname()->html() ?></div>
+            </div>
 
             
           </div>
