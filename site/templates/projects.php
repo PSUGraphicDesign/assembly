@@ -9,16 +9,20 @@
   <section class="project-list">
 
     <article>
-      <div class="column full">
-        <ul>
+      
+        
           <? foreach ( $projects as $project ) { ?>
+          <div class="column third">
+            <div class="projectname"><h4><?= $project->title()->kirbytext() ?></h4>
+              <?= $project->description()->kirbytext() ?>
 
-            <li><h3><?= $project->title()->kirbytext() ?></h3>
-              <?= $project->description()->kirbytext() ?></li>
+            <div class="smallbreak"></div>
+          </div>
 
+          </div>
           <? } ?>
-        </ul>
-      </div>
+    
+      
     </article>
   </section>
 </main>
