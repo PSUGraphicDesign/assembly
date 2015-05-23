@@ -23,12 +23,15 @@ window.Assembly.Storage.map_styles = [
   }
 ];
 
+
 $(function () {
   if ( $('.map').length ) new window.Assembly.Classes.Schedule({
-    map_options: window.Assembly.Storage.map_options,
+    map_settings: {
+      styles: window.Assembly.Storage.map_styles,
+      disableDefaultUI: true
+    },
     map: "#map",
     day_selector: ".day",
-    event_selector: ".event",
-    map_settings: {}
+    event_selector: ".event"
   });
 });

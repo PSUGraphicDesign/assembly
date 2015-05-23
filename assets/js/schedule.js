@@ -11,7 +11,8 @@ window.Assembly.Classes.Schedule = window.Assembly.Classes.Schedule || function 
     map_container: $('.map-container'),
     map_settings: {
       zoom: 13,
-      center: new google.maps.LatLng($('.map-container').data('center-lat'), $('.map-container').data('center-lng'))
+      center: new google.maps.LatLng($('.map-container').data('center-lat'), $('.map-container').data('center-lng')),
+      marker_image: '/assets/images/pin.png'
     }
   }, opts);
 
@@ -41,6 +42,7 @@ window.Assembly.Classes.Day = window.Assembly.Classes.Day || function (el, sched
   this.schedule = schedule;
   this.el = $(el);
   this.event_container = this.el.find('.events');
+  this.is_open = false;
 
   this.events = [];
 
@@ -56,20 +58,33 @@ window.Assembly.Classes.Day.prototype = {
     })(this));
 
     this.listen();
-    this.blur();
+    this.hide();
   },
   listen: function () {
     this.el.find('h3').on('click', (function (_this) {
       return function (e) {
-        _this.focus();
+        _this.toggle();
       }
     })(this));
   },
-  focus: function () {
-    this.event_container.show();
+  toggle: function () {
+    if (this.is_open) {
+      this.hide();
+    } else {
+      this.show();
+    }
   },
-  blur: function () {
-    this.event_container.hide();
+  show: function () {
+    // this.schedule.
+    this.event_container.slideDown({ queue: false });
+    this.is_open = true;
+  },
+  hide: function () {
+    this.event_container.slideUp({ queue: false });
+    $.each(this.events, function (index, el) {
+      el.blur();
+    });
+    this.is_open = false;
   }
 }
 
@@ -93,5 +108,28 @@ window.Assembly.Classes.Event.prototype = {
       map: this.schedule.map,
       title: this.el.find('.event-title').text()
     });
+
+    this.listen();
+  },
+  listen: function () {
+    google.maps.event.addListener(this.pin, 'click', (function(_this) {
+      return function (e) {
+        _this.focus();
+      }
+    })(this));
+
+    this.el.on('click', (function (_this) {
+      return function (e) {
+        _this.focus();
+      }
+    })(this));
+  },
+  focus: function () {
+    this.el.addClass('active');
+    this.pin.
+    this.day.show();
+  },
+  blur: function () {
+    this.el.removeClass('active');
   }
 }
