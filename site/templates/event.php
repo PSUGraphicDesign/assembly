@@ -12,7 +12,6 @@
 
 
       <div class="column two-thirds description">
-<hr>
       <dl>
 
           <dt>Presenters</dt>
@@ -22,7 +21,7 @@
           <dd><?= $page->time_begin()->html()?>–<?= $page->time_end()->html()?></dd>
 
           <dt>Location</dt>
-          <dd><?= $page->location()->html()?></dd>
+          <dd><?= $page->address()->html()?></dd>
 
       </dl>
 
@@ -35,7 +34,6 @@
     </div>     
 
     <div class="column third metadata">
-  <hr>
         <?php if($image = $page->image()): ?>
 <img src="<?php echo $image->url() ?>" alt="">
 <?php endif ?>

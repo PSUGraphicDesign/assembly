@@ -22,6 +22,9 @@ fields:
     label: Description
     type: textarea
     help: Provide any additional info that the associated Presenter and Project won't cover. Things like details about transportation, timing, etc. go here.
+  address:
+    label: Address
+    type: text
   location:
     label: Location
     type: place
