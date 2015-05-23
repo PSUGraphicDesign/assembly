@@ -30,7 +30,7 @@
           </li>
           
           <? } ?>
-    </ul>
+      </ul>
       
     </article>
   </section>
