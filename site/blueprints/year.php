@@ -19,7 +19,6 @@ pages:
       uid: area-guide
       template: area-guide
 
-
 files: true
 fields:
   title:
@@ -28,33 +27,50 @@ fields:
   year:
     label: Year
     type:  number
+  introduction:
+    label: Introduction
+    type: text
   description:
     label: Description
     type: textarea
-  date:
+  date_text:
     label: Conference Duration
     type: text
-  present:
-    label: Presenting at Assembly
+  location:
+    label: Location
+    type: text
+  small_description:
+    label: Sub Description
     type: textarea
-  presentcontact:
-    label: Presenter Contact
-    type: textarea
-  footer_sponsors:
+  sponsors:
     label: Sponsors
     type: structure
     entry: >
-      {{sponsor}}
+      <a href="{{url}}">{{name}}</a>
     fields:
-      sponsor:
+      name:
         label: Sponsor Name
         type: text
-  footer_links:
-    label: Links
+        required: true
+      url:
+        label: URL
+        type: url
+      logo:
+        label: Logo
+        type: select
+        options: images
+  sponsor_list
+    label: Sponsor List
+    type: textarea
+  links:
+    label: Footer Links
     type: structure
-    entry : >
+    entry: >
       {{link}}
     fields:
+      title:
+        label: Title
+        type: text
       link:
         label: Link
         type: URL

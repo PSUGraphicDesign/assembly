@@ -7,19 +7,38 @@
         <h2><?= $page->title()->html() ?></h2>
       </div>
     </article>
-    <article>
-      <div class="column two-thirds description">
-        <?= $page->description() ?>
-      </div>
-      <div class="column third metadata">
-        <dl>
-          <dt>Presenter</dt>
-          <dd><?= html::a($presenter->url(), $presenter->title()) ?></dd>
 
-          <dt>Project</dt>
-          <dd><?= html::a($project->url(), $project->title()) ?></dd>
-        </dl>
-      </div>
+    <article>   
+
+
+      <div class="column two-thirds description">
+      <dl>
+
+          <dt>Presenters</dt>
+          <dd><?= $page->contextualname()->html()?></dd>
+
+          <dt>Time</dt>
+          <dd><?= $page->time_begin()->html()?>–<?= $page->time_end()->html()?></dd>
+
+          <dt>Location</dt>
+          <dd><?= $page->address()->html()?></dd>
+
+      </dl>
+
+        <div class="eventdescription">
+          <?= $page->description()->kirbytext() ?>
+        </div>
+
+
+
+    </div>     
+
+    <div class="column third metadata">
+        <?php if($image = $page->image()): ?>
+<img src="<?php echo $image->url() ?>" alt="">
+<?php endif ?>
+      </div> 
+
     </article>
   </section>
 </main>

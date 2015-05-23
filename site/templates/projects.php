@@ -1,20 +1,47 @@
 <? snippet('header') ?>
 
 <main>
-  <section class="project-list">
+  <section class="intro">
     <article>
-      <div class="column full">
-        <h2><?= $page->title()->html() ?></h2>
-      </div>
+      <h2><?= $page->title()->html() ?></h2>
+      
+        <style type="text/css">
+            .intro {
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            background-image: url(<?php echo "/assets/images/backgrounds/bg-".rand(0, 5).".svg";?>);
+
+            </style>
+
     </article>
+  </section>
+
+  <section>
     <article>
-      <div class="column full">
+      <h3>A major focus of the conference is the connection between photography and social practice, with multiple events featuring projects by photographers from the Magnum agency made in conjunction with MFA students.</h3>
+
+      <hr>
+    </article>
+  </section>
+
+
+
+  <section class="project-list">
+
+    <article>
+      
         <ul>
           <? foreach ( $projects as $project ) { ?>
-            <li><?= html::a($project->url(), $project->title()) ?></li>
+          <li><div class="column third">
+            <div class="projectname"><h4><?= $project->title()->html() ?></h4></div>
+          </div>
+             <div class="column two-thirds" <?= $project->description()->kirbytext() ?></div>
+          </li>
+          
           <? } ?>
-        </ul>
-      </div>
+      </ul>
+      
     </article>
   </section>
 </main>

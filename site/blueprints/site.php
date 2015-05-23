@@ -14,3 +14,6 @@ fields:
     label: Description
     type: textarea
     buttons: false
+  social_links:
+    label: Social Media Links
+    type: textarea
