@@ -7,10 +7,11 @@
         <h2><?= $page->title()->html() ?></h2>
         <style type="text/css">
             .intro {
-            background-repeat: repeat;
-            background-attachment: fixed;
-            background-size: 100%;
-            background-image: url(<?php echo "/assets/images/backgrounds/bg-".rand(0, 5).".svg";  ?>);
+              background-repeat: repeat;
+              background-attachment: fixed;
+              background-size: 100%;
+              background-image: url(<?php echo "/assets/images/backgrounds/bg-".rand(0, 5).".svg";  ?>);
+            }
           </style>
       </div>
     </article>
@@ -30,7 +31,7 @@
   <section class="map">
     <article>
       <div class="column full">
-        <div data-center-lat="<?= c::get('place.defaults.lat') ?>" data-center-lng="<?= c::get('place.defaults.lng') ?>" data-zoom="<?= c::get('place.defaults.zoom') ?>" id="map-canvas" class="map-canvas"></div>
+        <div data-center-lat="<?= c::get('place.defaults.lat') ?>" data-center-lng="<?= c::get('place.defaults.lng') ?>" data-zoom="<?= c::get('place.defaults.zoom') ?>" id="map" class="map-container"></div>
       </div>
     </article>
   </section>
@@ -46,6 +47,7 @@
       </article>
       <article class="events">
         <? foreach ( $day->events() as $event ) { ?>
+          <div class="event" data-lat="<?= $event->location()->json('lat') ?>" data-lng="<?= $event->location()->json('lng') ?>">
           <div class="column quarter">
             <div class="timeschedule"><?= $event->time_begin() ?>&ndash;<?= $event->time_end() ?></div>
           </div>
@@ -54,12 +56,7 @@
             <div class="eventschedule"><?= html::a($event->url(), $event->title()) ?></div>
             <div class="presentername"><?= $event->contextualname()->html() ?></div>
             </div>
-
-            
           </div>
-
-
-
         <? } ?>
       </article>
     </section>
