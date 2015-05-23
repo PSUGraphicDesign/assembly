@@ -68,7 +68,7 @@ window.Assembly.Classes.Day.prototype = {
     this.hide();
   },
   listen: function () {
-    this.el.find('h3').on('click', (function (_this) {
+    this.el.find('.day-banner').on('click', (function (_this) {
       return function (e) {
         _this.toggle();
       }
