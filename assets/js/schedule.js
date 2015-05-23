@@ -133,9 +133,11 @@ window.Assembly.Classes.Event.prototype = {
     })(this));
   },
   focus: function () {
+    // Todo: Change pin image, rather than animation type
     this.pin.setAnimation(google.maps.Animation.BOUNCE);
   },
   blur: function () {
+    // Todo: Revert to 
     this.pin.setAnimation(null);
   }
 }
