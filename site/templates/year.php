@@ -5,6 +5,14 @@
     <article id="intro">
       <div class="column full">
 
+          <style type="text/css">
+            .intro {
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            background-image: url(<?php echo "/assets/images/backgrounds/bg-".rand(0, 5).".svg";  ?>);
+          </style>
+
         <h3><?= $page->date_text()->kirbytext() ?></h3>
 
         <h1><?= $page->introduction()->kirbytext() ?></h1>
@@ -19,6 +27,16 @@
       <div class="column full">
 
           <h3><?= $page->description()->kirbytext() ?></h3>
+
+      </div>
+    </article>
+  </section>
+
+    <div class="break"></div>
+
+  <section class="small_description">
+    <article>
+      <div class="column full">
 
           <p><?= $page->small_description()->kirbytext() ?></p>
 

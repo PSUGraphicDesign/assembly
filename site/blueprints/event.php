@@ -22,6 +22,9 @@ fields:
     label: Description
     type: textarea
     help: Provide any additional info that the associated Presenter and Project won't cover. Things like details about transportation, timing, etc. go here.
+  address:
+    label: Address
+    type: text
   location:
     label: Location
     type: place
@@ -31,9 +34,16 @@ fields:
     options: query
     query:
       page: ../../../presenters
+  contextualname:
+    label: Project Presenters and Collaborators
+    type: text
   project:
     label: Project
     type: select
     options: query
     query:
       page: ../../../projects
+  illustration:
+    label: Illustration
+    type: select
+    options: images

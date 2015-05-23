@@ -59,6 +59,9 @@ fields:
         label: Logo
         type: select
         options: images
+  sponsor_list
+    label: Sponsor List
+    type: textarea
   links:
     label: Footer Links
     type: structure

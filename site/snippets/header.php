@@ -27,6 +27,7 @@
         <div class="column half">
           <div class="menu">
             <?= snippet('menu') ?>
+
           </div>
         </div>
       </article>
