@@ -33,6 +33,13 @@ window.Assembly.Classes.Schedule.prototype = {
       }
     })(this));
   },
+  isolate: function (to_isolate) {
+    $.each(this.days, function (index, day) {
+      if (day !== to_isolate) {
+        day.hide();
+      }
+    });
+  }
 }
 
 
@@ -75,15 +82,22 @@ window.Assembly.Classes.Day.prototype = {
     }
   },
   show: function () {
-    // this.schedule.
+    this.schedule.isolate(this);
     this.event_container.slideDown({ queue: false });
+
+    $.each(this.events, function (index, el) {
+      el.focus();
+    });
+
     this.is_open = true;
   },
   hide: function () {
     this.event_container.slideUp({ queue: false });
+
     $.each(this.events, function (index, el) {
       el.blur();
     });
+
     this.is_open = false;
   }
 }
@@ -114,22 +128,14 @@ window.Assembly.Classes.Event.prototype = {
   listen: function () {
     google.maps.event.addListener(this.pin, 'click', (function(_this) {
       return function (e) {
-        _this.focus();
-      }
-    })(this));
-
-    this.el.on('click', (function (_this) {
-      return function (e) {
-        _this.focus();
+        _this.day.show();
       }
     })(this));
   },
   focus: function () {
-    this.el.addClass('active');
-    this.pin.
-    this.day.show();
+    this.pin.setAnimation(google.maps.Animation.BOUNCE);
   },
   blur: function () {
-    this.el.removeClass('active');
+    this.pin.setAnimation(null);
   }
 }
