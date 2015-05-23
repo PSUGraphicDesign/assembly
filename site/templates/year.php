@@ -5,6 +5,14 @@
     <article id="intro">
       <div class="column full">
 
+          <!-- style type="text/css">
+            .intro {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            background-image: url(<?php /* echo "/assets/images/backgrounds/bg-".rand(0, 2).".jpg";  */ ?>);
+          </style-->
+
         <h3><?= $page->date_text()->kirbytext() ?></h3>
 
         <h1><?= $page->introduction()->kirbytext() ?></h1>
