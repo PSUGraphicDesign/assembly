@@ -82,7 +82,7 @@ window.Assembly.Classes.Day.prototype = {
     }
   },
   show: function () {
-    this.schedule.isolate(this);
+    // this.schedule.isolate(this);
     this.event_container.slideDown({ queue: false });
 
     $.each(this.events, function (index, el) {
