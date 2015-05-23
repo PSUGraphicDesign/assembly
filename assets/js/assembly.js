@@ -10,16 +10,6 @@ window.Assembly.Storage.map_styles = [
       { "hue": "#003bff" },
       { "saturation": 100 }
     ]
-  },{
-    "featureType": "landscape.natural",
-    "stylers": [
-      { "visibility": "off" }
-    ]
-  },{
-    "featureType": "road.highway",
-    "stylers": [
-      { "visibility": "simplified" }
-    ]
   }
 ];
 
