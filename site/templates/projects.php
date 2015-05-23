@@ -13,13 +13,11 @@
         
           <? foreach ( $projects as $project ) { ?>
           <div class="column third">
-            <div class="projectname"><h4><?= $project->title()->kirbytext() ?></h4>
-              <?= $project->description()->kirbytext() ?>
-
-            <div class="smallbreak"></div>
+            <div class="projectname"><h4><?= $project->title()->html() ?></h4></div>
           </div>
-
-          </div>
+             <div class="column two-thirds" <?= $project->description()->kirbytext() ?></div>
+<div class="smallbreak"></div>
+          
           <? } ?>
     
       

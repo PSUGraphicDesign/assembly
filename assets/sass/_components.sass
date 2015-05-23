@@ -31,7 +31,7 @@ header
   background-color: $color-white 
   p
     font-size: 1.5em
-    padding: 1.5rem 0
+
 
 
 .small_description
@@ -88,22 +88,44 @@ li
   border: 1.25px solid $color-blue
   margin: 0 auto
 
+hr
+  border: 0
+  height: 0
+  border-top: 1px solid $color-white
+  border-bottom: 2px solid $color-blue
+
+.linebreak
+  width: 100%
+  border-top: 1px solid $color-blue
+  border-bottom: 1px solid $color-blue
+
+.linebreakgrey
+  width: 100%
+  border-top: 1px solid $color-white
+  border-bottom: 1px solid $color-grey
+
 //Projects
 
-.projectname
-  vertical-align: top
+
 
 //Schedule
 
+.event-details
+  h2
+    +outline-text-blue
+    text-transform: uppercase
+    letter-spacing: .1em
+    
+
 .eventblock
-  padding-bottom: 1.5rem
+  padding-bottom: 1rem
 
 .daynav
   text-align: center
   text-transform: uppercase
   letter-spacing: .1em
   font-size: 1rem
-  background-color: $color-lightblue
+  background-color: $color-lightgrey
   color: $color-white
   padding: .8rem 0
 
@@ -113,21 +135,59 @@ li
     font-weight: 700
 
   a:hover
-    border-bottom: 1px solid $color-black
-
+    color: $color-blue
 
 .timeschedule
   color: $color-lightblue
+  text-transform: uppercase
+  letter-spacing: .15em
+  text-decoration: none
 
 .presentername
   color: $color-grey
 
-  
-  
+
+.eventdescription
+  font-size: .8rem
+
+dt
+  color: $color-lightblue
+  text-transform: uppercase
+  letter-spacing: .15em
+  font-size: .8em
+  text-decoration: none
+  font-weight: 700
+
+dd
+  padding: .5rem 0
+  margin: 0
+  text-decoration: none
+  font-weight: 700
+
+// Presenter
+
+.presenter-list
+  a
+    color: $color-blue
+    text-transform: uppercase
+    letter-spacing: .15em
+    font-size: .8em
+    text-decoration: none
+    font-weight: 700
 
 // Footer
 footer
   background-color: $color-lightblue
   color: $color-white
-  bottom: 0
+
+.thebottom
+  text-transform: uppercase
+  letter-spacing: .15em
+  font-size: .8em
+  font-weight: 700
+  text-decoration: none
+
+.right
+  margin-right: 0
+
 

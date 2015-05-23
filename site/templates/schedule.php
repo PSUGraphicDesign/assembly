@@ -33,7 +33,9 @@
         <div class="column full">
           <h4><?= $day->date('l, M jS') ?></h4>
         </div>
-        <div class="smallbreak"></div>
+
+        <div class="linebreak"></div>
+
       </article>
       <article class="events">
         <? foreach ( $day->events() as $event ) { ?>
@@ -48,6 +50,9 @@
 
             
           </div>
+
+
+
         <? } ?>
       </article>
     </section>
