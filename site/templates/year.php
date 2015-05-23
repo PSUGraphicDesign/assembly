@@ -7,7 +7,7 @@
 
           <style type="text/css">
             .intro {
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             background-attachment: fixed;
             background-size: 100%;
             background-image: url(<?php echo "/assets/images/backgrounds/bg-".rand(0, 5).".svg";  ?>);
