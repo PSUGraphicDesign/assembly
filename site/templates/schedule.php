@@ -5,6 +5,13 @@
     <article>
       <div class="column full">
         <h2><?= $page->title()->html() ?></h2>
+        <style type="text/css">
+            .intro {
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            background-image: url(<?php echo "/assets/images/backgrounds/bg-".rand(0, 5).".svg";  ?>);
+          </style>
       </div>
     </article>
   </section>
