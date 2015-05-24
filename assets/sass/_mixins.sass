@@ -45,4 +45,24 @@
   -o-text-stroke-width: 1px
   -o-text-stroke-color: $color-blue
 
+// Dividers
+@mixin line($color: $color-blue)
+  &::after
+    content: ''
+    display: block
+    border-bottom: 2px solid $color
 
+@mixin block-small($color: $color-blue)
+  +divider-block(4rem, $color)
+
+@mixin block-large($color: $color-blue)
+  +divider-block(8rem, $color)
+
+@mixin divider-block($width, $color)
+  &::after
+    content: ''
+    display: block
+    width: $width
+    height: 1rem
+    border: 1px solid $color
+    margin: 2rem auto
