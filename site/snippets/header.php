@@ -15,7 +15,7 @@
   <?= js('/assets/js/assembly.js') ?>
   <?= js('/assets/js/schedule.js') ?>
 </head>
-<body>
+<body class="<?= AB::body_classes() ?>">
   <header>
     <section>
       <article class="kebab">
