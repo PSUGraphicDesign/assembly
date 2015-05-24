@@ -1,0 +1,56 @@
+section.day
+  .day-banner
+    cursor: pointer
+  
+  article.events
+    .event
+      .time
+        color: $color-lightblue
+        text-transform: uppercase
+        text-decoration: none
+
+      .details
+        padding-bottom: 1rem
+
+      .title
+      .presenter
+        color: $color-grey   
+      a
+        text-decoration: none
+        font-weight: 700
+
+      a:hover
+        color: $color-blue
+
+
+section.hud
+  .day
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: .1em
+    font-size: 1rem
+    background-color: $color-lightgrey
+    color: $color-white
+    padding: .8rem 0
+
+
+section.event
+  h2
+    +outline-text-blue
+    text-transform: uppercase
+    letter-spacing: .1em
+
+  .details
+    .group
+      margin-bottom: 1rem
+
+    .label
+      +small-caps
+      margin-bottom: 0
+      color: $color-lightblue
+      text-decoration: none
+      font-weight: 700
+      padding: 0
+
+    .data
+      font-weight: 700

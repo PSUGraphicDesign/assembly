@@ -1,7 +1,7 @@
 <? snippet('header') ?>
 
 <main>
-  <section class="event-details">
+  <section class="event">
     <article>
       <div class="column full">
         <h2><?= $page->title()->html() ?></h2>
@@ -9,35 +9,35 @@
     </article>
 
     <article>   
+      <div class="column two-thirds event-info">
+        <div class="details">
+          <div class="group">
+            <h5 class="label">Presenters</h5>
+            <div class="data"><?= $page->contextualname()->html()?></div>
+          </div>
 
+          <div class="group">
+            <h5 class="label">Time</h5>
+            <div class="data"><?= $page->time_begin()->html() ?>–<?= $page->time_end()->html()?></div>
+          </div>
 
-      <div class="column two-thirds description">
-      <dl>
+          <div class="group">
+            <h5 class="label">Location</h5>
+            <div class="data"><?= $page->address()->html()?></div>
+          </div>
+        </div>
 
-          <dt>Presenters</dt>
-          <dd><?= $page->contextualname()->html()?></dd>
-
-          <dt>Time</dt>
-          <dd><?= $page->time_begin()->html()?>–<?= $page->time_end()->html()?></dd>
-
-          <dt>Location</dt>
-          <dd><?= $page->address()->html()?></dd>
-
-      </dl>
-
-        <div class="eventdescription">
+        <div class="description">
           <?= $page->description()->kirbytext() ?>
         </div>
 
+      </div>     
 
-
-    </div>     
-
-    <div class="column third metadata">
-        <?php if($image = $page->image()): ?>
-<img src="<?php echo $image->url() ?>" alt="">
-<?php endif ?>
-      </div> 
+      <div class="column third event-image">
+        <? if( $image = $page->image() ) { ?>
+          <img src="<?= $image->url() ?>" alt="">
+        <? } ?>
+      </div>
 
     </article>
   </section>

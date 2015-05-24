@@ -1,49 +1,31 @@
 <? snippet('header') ?>
 
 <main>
-  <section class="intro">
+  <section class="intro" style="background-image: url('<?= AB::random_background() ?>')">
     <article id="intro">
       <div class="column full">
-
-          <style type="text/css">
-            .intro {
-            background-repeat: repeat;
-            background-attachment: fixed;
-            background-size: 100%;
-            background-image: url(<?php echo "/assets/images/backgrounds/bg-".rand(0, 5).".svg";  ?>);
-          </style>
-
-        <h3><?= $page->date_text()->kirbytext() ?></h3>
-
-        <h1><?= $page->introduction()->kirbytext() ?></h1>
-
-        <h3><?= $page->location()->kirbytext() ?></h3>
+        <h3><?= $page->date_text()->html() ?></h3>
+        <h1><?= $page->introduction()->html() ?></h1>
+        <h3><?= $page->location()->html() ?></h3>
       </div>
     </article>
   </section>
 
-  <section class="description">
+  <section class="description block-after">
     <article>
       <div class="column full">
-
-          <h3><?= $page->description()->kirbytext() ?></h3>
-
+        <?= $page->description()->kirbytext() ?>
       </div>
     </article>
   </section>
 
-    <div class="break"></div>
-
-  <section class="small_description">
+  <section class="more">
     <article>
       <div class="column full">
-
-          <p><?= $page->small_description()->kirbytext() ?></p>
-
+        <?= $page->small_description()->kirbytext() ?>
       </div>
     </article>
   </section>
-
 
 </main>
 

@@ -1,194 +1,33 @@
-// Header
+@import components/dividers
+@import components/header
 
-header
-  background-color: $color-blue
-  margin: -1rem 0
-
-
-.intro
-  text-align: center
-  color: $color-white
-  //background-color: $color-blue
-
-  h1
-    +outline-text
-    text-transform: uppercase
-    letter-spacing: .1em
-    padding: 0 2rem
-
-  h2
-    +outline-text
-    text-transform: uppercase
-    letter-spacing: .15em
-    padding: 4rem 0 1rem 0
-
-  h3
-    text-transform: uppercase
-    letter-spacing: .15em
-
-  article
-    padding-top: 0
-
-li
-  padding: 0
-  margin: 0
-  list-style: none
-  padding-bottom: 2rem
+// Lists
 
 ul
   padding: 0
   list-style: none
   margin: 0
+
+li
+  padding: 0
+  margin: 0
+  list-style: none
+  // padding-bottom: 2rem
     
 
-.description
-  p
-    font-size: 1.5em
-
-
-
-.small_description
-  background-color: $color-white
-  color: $color-blue
-  p
-    font-size: 1.25em 
-    padding: .5rem 0
-
-
-.menu
-  text-align: right
-  
-  ul
-    list-style: none
-
-  li
-    display: inline-block
-    padding-left: 10%
-    padding-top: 7%
-
-  a
-    color: $color-white
-    text-decoration: none
-    text-transform: uppercase
-    letter-spacing: .1em
-    font-size: .8em
-    padding: 5px
-
-
-  a:hover
-    background-color: $color-white
-    color: $color-blue
-
-.map-container
-  width: 100%
-  height: 400px
-
-// Rhetorical Elements
-.break
-  width: 100px
-  height: 15px
-  border: 1.25px solid $color-blue
-  margin: 0 auto
-  //-webkit-transform: rotate(10deg)
-  //-moz-transform: rotate(10deg)
-
-.smallbreak
-  width: 50px
-  height: 15px
-  border: 1.25px solid $color-blue
-  margin: 0 auto
-
-hr
-  border: 0
-  height: 0
-  border-top: 1px solid $color-white
-  border-bottom: 2px solid $color-blue
-
-.linebreak
-  width: 100%
-  border-top: 1px solid $color-blue
-  border-bottom: 1px solid $color-blue
-
-.linebreakgrey
-  width: 100%
-  border-top: 1px solid $color-white
-  border-bottom: 1px solid $color-grey
-
-//Projects
+@import components/year
+@import components/map
 
 
 
 //Schedule
-
-.day-banner
-  cursor: pointer
-
-.event-details
-  h2
-    +outline-text-blue
-    text-transform: uppercase
-    letter-spacing: .1em
-    
-
-.eventblock
-  padding-bottom: 1rem
-
-.daynav
-  text-align: center
-  text-transform: uppercase
-  letter-spacing: .1em
-  font-size: 1rem
-  background-color: $color-lightgrey
-  color: $color-white
-  padding: .8rem 0
-
-.eventschedule
-  a
-    text-decoration: none
-    font-weight: 700
-
-  a:hover
-    color: $color-blue
-
-.timeschedule
-  color: $color-lightblue
-  text-transform: uppercase
-  text-decoration: none
-
-.presentername
-  color: $color-grey
-
-
-.eventdescription
-  font-size: .8rem
-
-dt
-  color: $color-lightblue
-  text-transform: uppercase
-  letter-spacing: .15em
-  font-size: .8em
-  text-decoration: none
-  font-weight: 700
-  padding: 0
-
-dd
-  padding: .5rem 0
-  margin: 0
-  text-decoration: none
-  font-weight: 700
+@import components/schedule
 
 // Presenter
-
-.presenter-list
-  a
-    color: $color-blue
-    text-transform: uppercase
-    letter-spacing: .15em
-    font-size: .8em
-    text-decoration: none
-    font-weight: 700
+@import components/presenters
 
 // Footer
+
 footer
   background-color: $color-blue
   color: $color-white

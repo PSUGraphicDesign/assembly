@@ -1,0 +1,71 @@
+// Header
+
+header
+  background-color: $color-blue
+
+  article
+    padding-top: 1rem
+    padding-bottom: 1rem
+
+  .branding
+    +mobile
+      text-align: center
+
+  .menu
+    text-align: right
+    
+    +mobile
+      text-align: center
+
+    ul
+      list-style: none
+
+    li
+      display: inline-block
+      padding-left: 2rem
+      +mobile
+        padding: 0 0 1rem 0
+        display: block
+
+    a
+      color: $color-white
+      text-decoration: none
+      text-transform: uppercase
+      letter-spacing: .1em
+      font-size: .8em
+      padding: 5px
+
+    a:hover
+      background-color: $color-white
+      color: $color-blue
+
+
+
+section.intro
+  text-align: center
+  color: $color-white
+  background-repeat: repeat
+  background-attachment: fixed
+  background-size: 100%
+
+  article
+    padding-top: 0
+
+  h1
+    +outline-text
+    text-transform: uppercase
+    letter-spacing: .1em
+    padding: 0 2rem
+
+    +mobile
+      font-size: 1.75em
+
+  h2
+    +outline-text
+    text-transform: uppercase
+    letter-spacing: .15em
+    padding: 4rem 0 1rem 0
+
+  h3
+    text-transform: uppercase
+    letter-spacing: .15em

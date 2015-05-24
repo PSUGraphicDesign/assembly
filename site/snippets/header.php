@@ -18,17 +18,14 @@
 <body>
   <header>
     <section>
-      <article>
-        <div class="column half">
+      <article class="kebab">
+        <div class="column quarter mobile-full branding">
           <div class="logo">
-            <a href="/"><img src="/assets/images/Assembly_Logo.gif"></a>
+            <a href="<?= $site->url() ?>"><img src="/assets/images/Assembly_Logo.gif"></a>
           </div> 
         </div>
-        <div class="column half">
-          <div class="menu">
-            <?= snippet('menu') ?>
-
-          </div>
+        <div class="column three-quarters mobile-full menu">
+          <?= snippet('menu') ?>
         </div>
       </article>
     </section>

@@ -1,21 +1,9 @@
 <? snippet('header') ?>
 
 <main>
-  <section class="intro">
-    <article>
-      <div class="column full">
-        <h2><?= $page->title()->html() ?></h2>
-        <style type="text/css">
-            .intro {
-              background-repeat: repeat;
-              background-attachment: fixed;
-              background-size: 100%;
-              background-image: url(<?php echo "/assets/images/backgrounds/bg-".rand(0, 5).".svg";  ?>);
-            }
-          </style>
-      </div>
-    </article>
-  </section>
+  <? snippet('intro') ?>
+
+  <? /*
   <section class="hud">
     <article class="centered-layout">
       <? foreach ( $days as $day ) { ?>
@@ -28,6 +16,8 @@
       </div>
     </article>
   </section>
+  */ ?>
+
   <section class="map">
     <article>
       <div class="column full">
@@ -35,26 +25,31 @@
       </div>
     </article>
   </section>
+
   <? foreach ( $days as $day ) { ?>
     <section class="day">
       <article class="day-banner">
-        <div class="column full">
+        <div class="column full line-after">
           <h4><?= $day->date('l, M jS') ?></h4>
         </div>
-
-        <div class="linebreak"></div>
-
       </article>
       <article class="events">
         <? foreach ( $day->events() as $event ) { ?>
           <div class="event" data-lat="<?= $event->location()->json('lat') ?>" data-lng="<?= $event->location()->json('lng') ?>">
-          <div class="column quarter">
-            <div class="timeschedule"><?= $event->time_begin() ?>&ndash;<?= $event->time_end() ?></div>
-          </div>
-          <div class="column three-quarters">
-            <div class="eventblock">
-            <div class="eventschedule"><?= html::a($event->url(), $event->title()) ?></div>
-            <div class="presentername"><?= $event->contextualname()->html() ?></div>
+            <div class="column quarter">
+              <div class="time">
+                <?= $event->time_begin() ?>&ndash;<?= $event->time_end() ?>
+              </div>
+            </div>
+            <div class="column three-quarters">
+              <div class="details">
+                <div class="title">
+                  <?= html::a($event->url(), $event->title()) ?>
+                </div>
+                <div class="presenter">
+                  <?= $event->contextualname()->html() ?>
+                </div>
+              </div>
             </div>
           </div>
         <? } ?>

@@ -37,4 +37,8 @@
       return static::current_year();
     }
   }
+
+  public static function random_background () {
+    return "/assets/images/backgrounds/bg-" . rand(0, 5) . ".svg";
+  }
 }

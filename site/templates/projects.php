@@ -1,27 +1,13 @@
 <? snippet('header') ?>
 
 <main>
-  <section class="intro">
-    <article>
-      <h2><?= $page->title()->html() ?></h2>
-      
-        <style type="text/css">
-            .intro {
-            background-repeat: repeat;
-            background-attachment: fixed;
-            background-size: 100%;
-            background-image: url(<?php echo "/assets/images/backgrounds/bg-".rand(0, 5).".svg";?>);
-
-            </style>
-
-    </article>
-  </section>
+  <? snippet('intro') ?>
 
   <section>
     <article>
-      <h3>A major focus of the conference is the connection between photography and social practice, with multiple events featuring projects by photographers from the Magnum agency made in conjunction with MFA students.</h3>
-
-      <hr>
+      <div class="column full line-after">
+        <?= $page->intro()->kirbytext() ?>
+      </div>
     </article>
   </section>
 
