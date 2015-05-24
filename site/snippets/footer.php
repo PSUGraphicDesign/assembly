@@ -9,16 +9,7 @@
 
           <div class="column half sponsors">
             <h5>Sponsors</h5>
-            <?php /* <? snippet('sponsors', ['year' => AB::contextual_year()]) ?> */ ?>
-             
-              <ul>
-                <? foreach ( $sponsors as $sponsor ) { ?>
-         
-                  <h4><?= $sponsors->sponsor()->html() ?></h4>
-          
-                <? } ?>
-
-              </ul>
+              <?= $site->sponsor_list()->kirbytext() ?>
           </div>
 
           <div class="column quarter social">
