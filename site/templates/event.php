@@ -40,6 +40,19 @@
       </div>
 
     </article>
+
+    <article class="nav">
+      <div class="column half previous">
+        <? if ( $page->hasPrevVisible() ) { ?>
+          <?= html::a($page->prevVisible()->url(), $page->prevVisible()->title()) ?>
+        <? } ?>
+      </div>
+      <div class="column half next">
+        <? if ( $page->hasNextVisible() ) { ?>
+          <?= html::a($page->nextVisible()->url(), $page->nextVisible()->title()) ?>
+        <? } ?>
+      </div>
+    </article>
   </section>
 </main>
 
