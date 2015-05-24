@@ -1,10 +1,15 @@
-article.centered-layout
-  text-align: center
-  & > .column
-    text-align: initial
+article
+  &.centered-layout
+    text-align: center
+    & > .column
+      text-align: initial
+
+  &.kebab
+    & > .column
+      vertical-align: middle
 
 .column
-  padding: 0 1rem .5rem 0
+  padding: 0 1rem
   display: inline-block
   vertical-align: top
   font-size: $type-size-base
@@ -53,6 +58,9 @@ article.centered-layout
   +tablet
     &.tablet-full
       width: 100%
+
+    &.tablet-two-thirds
+      width: (100% / 3) * 2
 
     &.tablet-half
       width: (100% / 2)
