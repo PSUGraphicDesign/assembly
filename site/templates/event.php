@@ -44,11 +44,13 @@
     <article class="nav">
       <div class="column half previous">
         <? if ( $page->hasPrevVisible() ) { ?>
+          <h6>Previous</h6>
           <?= html::a($page->prevVisible()->url(), $page->prevVisible()->title()) ?>
         <? } ?>
       </div>
       <div class="column half next">
         <? if ( $page->hasNextVisible() ) { ?>
+          <h6>Next</h6>
           <?= html::a($page->nextVisible()->url(), $page->nextVisible()->title()) ?>
         <? } ?>
       </div>
