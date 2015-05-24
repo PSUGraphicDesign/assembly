@@ -1,7 +1,12 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Day
-pages: event
+pages:
+  template: event
+  num:
+    mode: date
+    field: time_begin
+    format: Hi
 files: false
 fields:
   title: 
