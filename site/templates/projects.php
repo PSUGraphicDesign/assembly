@@ -16,10 +16,12 @@
       <article class="project">
         <div class="column third">
           <div class="projectname">
-            <h4> <? if ( $events = $project->events() ) { ?>
+            <h4>
+
+              <? if ( $events = $project->events() ) { ?>
             <ul>
               <? foreach ( $events as $event ) { ?>
-                <li><?= html::a($event->url(), $event->title()) ?></li>
+                <li><?= html::a($event->url(), $project->title()) ?></li>
               <? } ?>
             </ul>
           <? } ?></h4>
