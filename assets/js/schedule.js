@@ -12,9 +12,7 @@ window.Assembly.Classes.Schedule = window.Assembly.Classes.Schedule || function 
     map_settings: {
       zoom: 13,
       center: new google.maps.LatLng($('.map-container').data('center-lat'), $('.map-container').data('center-lng')),
-    },
-    marker_image: '/assets/images/map/pin-inactive.png',
-    marker_image_active: '/assets/images/map/pin-active.png'
+    }
   }, opts);
 
   this.days = [];
@@ -118,19 +116,8 @@ window.Assembly.Classes.Event = window.Assembly.Classes.Event || function (el, d
 
 window.Assembly.Classes.Event.prototype = {
   init: function () {
-    this.icon_active = {
-      url: this.schedule.options.marker_image_active,
-      size: new google.maps.Size(24, 50),
-      origin: new google.maps.Point(0,0),
-      anchor: new google.maps.Point(0, 12)
-    };
-
-    this.icon_inactive = {
-      url: this.schedule.options.marker_image,
-      size: new google.maps.Size(24, 50),
-      origin: new google.maps.Point(0,0),
-      anchor: new google.maps.Point(0, 12)
-    };
+    this.icon_active = window.Assembly.Storage.map_marker_active;
+    this.icon_inactive = window.Assembly.Storage.map_marker_inactive;
 
     this.pin = new google.maps.Marker({
       position: new google.maps.LatLng(this.lat, this.lng),

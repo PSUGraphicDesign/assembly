@@ -6,29 +6,24 @@
   <section>
     <article>
       <div class="column full line-after">
-        <?= $page->intro()->kirbytext() ?>
+        <div class="head-description"><?= $page->intro()->kirbytext() ?></div>
       </div>
     </article>
   </section>
 
-
-
   <section class="project-list">
-
-    <article>
-      
-        <ul>
-          <? foreach ( $projects as $project ) { ?>
-          <li><div class="column third">
-            <div class="projectname"><h4><?= $project->title()->html() ?></h4></div>
+    <? foreach ( $projects as $project ) { ?>
+      <article class="project">
+        <div class="column third">
+          <div class="projectname">
+            <h4><?= $project->title()->html() ?></h4>
           </div>
-             <div class="column two-thirds" <?= $project->description()->kirbytext() ?></div>
-          </li>
-          
-          <? } ?>
-      </ul>
-      
-    </article>
+        </div>
+        <div class="column two-thirds">
+          <?= $project->description()->kirbytext() ?>
+        </div>
+      </article>
+    <? } ?>
   </section>
 </main>
 

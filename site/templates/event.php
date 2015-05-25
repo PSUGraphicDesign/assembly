@@ -31,6 +31,12 @@
           <?= $page->description()->kirbytext() ?>
         </div>
 
+        <? if ($page->location()) { ?>
+          <div class="map">
+            <div id="map" class="map-container" data-center-lat="<?= $page->location()->json('lat') ?>" data-center-lng="<?= $page->location()->json('lng') ?>"></div>
+          </div>
+        <? } ?>
+
       </div>     
 
       <div class="column third event-image">

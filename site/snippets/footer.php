@@ -1,37 +1,40 @@
     <footer>
-      <section>
+
+      <section class="credits">
         <article>
-
-         <div class="column quarter">
-            <h5>Many Thanks</h5>
-            <?php /* <? snippet('thanks', ['year' => AB::contextual_year()]) ?> */ ?>
+          <div class="column third partners">
+            <a href="http://www.pdx.edu/the-arts/">
+             <img src="/assets/images/PSU.png">
+            </a>
           </div>
-
-          <div class="column half sponsors">
-            <h5>Sponsors</h5>
-              <?= $site->sponsor_list()->kirbytext() ?>
+          <div class="column third partners">
+            <a href="http://psusocialpractice.org">
+              <img src="/assets/images/PSUSOC.png">
+            </a>
           </div>
-
-          <div class="column quarter social">
-            <h5>Find Us</h5>
-            <?= $site->social_links()->kirbytext() ?>
-          </div>  
-
-        
-          <div class="column half">
-            <div class="thebottom">2015 Assembly</div>
+          <div class="column third partners">
+            <a href="http://magnumphotos.com">
+              <img src="/assets/images/Magnum.png">
+            </a>
           </div>
-
-          <div class="column half">
-            <div class="thebottomright"><a href="http://psusocialpractice.org">PSU Social Practice</a>
-            </div>
-          </div>
-
-
         </article>
+        <? snippet('sponsors') ?>
       </section>
 
-
+      <section class="last">
+        <article>
+          <div class="column half">
+            <div class="copyright">
+              <?= date('Y') ?> Assembly
+            </div>
+          </div>
+          <div class="column half bottom">
+            <div class="author">
+              <a href="http://psusocialpractice.org">PSU Social Practice</a>
+            </div>
+          </div>
+        </article>
+      </section>
     </footer>
   </body>
 </html>

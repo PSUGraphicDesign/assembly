@@ -16,7 +16,7 @@
 
 @mixin small-caps
   font-size: 0.75em
-  letter-spacing: 0.05em
+  letter-spacing: 0.1em
   text-transform: uppercase
 
 @mixin outline-text
@@ -65,4 +65,9 @@
     width: $width
     height: 1rem
     border: 1px solid $color
-    margin: 2rem auto
+    margin: 1rem auto
+
+@mixin divide-columns($columns: 3)
+  -webkit-column-count: $columns
+  -moz-column-count: $columns
+  column-count: $columns

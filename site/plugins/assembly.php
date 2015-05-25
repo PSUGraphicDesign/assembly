@@ -41,4 +41,10 @@
   public static function random_background () {
     return "/assets/images/backgrounds/bg-" . rand(0, 5) . ".svg";
   }
+
+  public static function sponsors_in_chunks ($chunks = 3) {
+    $sponsors = split("\n", static::current_year()->sponsor_list());
+    $sponsors_per_chunk = ceil(count($sponsors) / $chunks);
+    return array_chunk($sponsors, $sponsors_per_chunk);
+  }
 }
