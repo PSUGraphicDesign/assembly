@@ -21,6 +21,14 @@
         </div>
         <div class="column two-thirds">
           <?= $project->description()->kirbytext() ?>
+
+          <? if ( $events = $project->events() ) { ?>
+            <ul>
+              <? foreach ( $events as $event ) { ?>
+                <li><?= html::a($event->url(), $event->title()) ?></li>
+              <? } ?>
+            </ul>
+          <? } ?>
         </div>
       </article>
     <? } ?>
