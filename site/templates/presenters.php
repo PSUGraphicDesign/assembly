@@ -6,7 +6,7 @@
   <section>
     <article>
       <div class="column full line-after">
-        <?= $page->intro()->kirbytext() ?>
+        <div class="headdescription"><?= $page->intro()->kirbytext() ?></div>
       </div>
     </article>
   </section>
@@ -26,7 +26,7 @@
           <?= $presenter->bio()->kirbytext() ?>
 
           <? if ( $presenter->website() ) { ?>
-            <a href="<?= $presenter->website()->html() ?>" class="website" target="blank"><?= $presenter->website()->html() ?></a>
+           <div class="presenter-site"> <a href="<?= $presenter->website()->html() ?>" class="website" target="blank"><?= $presenter->website()->html() ?></a></div>
           <? } ?>
         </div>
       <? } ?>
