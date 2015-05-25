@@ -23,7 +23,7 @@ window.Assembly.Storage.map_styles = [
   {
     "stylers": [
       { "hue": "#003bff" },
-      { "saturation": 100 }
+      { "saturation": -100 }
     ]
   }
 ];
