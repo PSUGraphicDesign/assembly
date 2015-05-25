@@ -11,13 +11,10 @@
     </article>
   </section>
 
-
-
   <section class="project-list">
-
     <article>
 
-      <? foreach ( $day->$events as $event ) { ?>
+      <? /* foreach ( $day->$events as $event ) { ?>
         <ul>
           <li>
             <div class="column third">
@@ -25,20 +22,18 @@
             </div>
           </li>
         </ul>
-
-      <? } ?>
+      <? } */ ?>
       
-        <ul>
-          <? foreach ( $projects as $project ) { ?>
-          <li><div class="column third">
-            <div class="projectname"><h4><?= $project->title()->html() ?></h4></div>
+      <? foreach ( $projects as $project ) { ?>
+        <div class="column third">
+          <div class="projectname">
+            <h4><?= $project->title()->html() ?></h4>
           </div>
-             <div class="column two-thirds" <?= $project->description()->kirbytext() ?></div>
-          </li>
-          
-          <? } ?>
-      </ul>
-      
+        </div>
+        <div class="column two-thirds">
+          <?= $project->description()->kirbytext() ?>
+        </div>
+      <? } ?>
     </article>
   </section>
 </main>
