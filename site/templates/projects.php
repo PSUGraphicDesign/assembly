@@ -16,19 +16,19 @@
       <article class="project">
         <div class="column third">
           <div class="projectname">
-            <h4><?= $project->title()->html() ?></h4>
-          </div>
-        </div>
-        <div class="column two-thirds">
-          <?= $project->description()->kirbytext() ?>
-
-          <? if ( $events = $project->events() ) { ?>
+            <h4> <? if ( $events = $project->events() ) { ?>
             <ul>
               <? foreach ( $events as $event ) { ?>
                 <li><?= html::a($event->url(), $event->title()) ?></li>
               <? } ?>
             </ul>
-          <? } ?>
+          <? } ?></h4>
+          </div>
+        </div>
+        <div class="column two-thirds">
+          <?= $project->description()->kirbytext() ?>
+
+         
         </div>
       </article>
     <? } ?>
