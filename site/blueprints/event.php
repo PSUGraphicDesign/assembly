@@ -8,6 +8,9 @@ fields:
   title:
     label: Title
     type: text
+  date:
+    label: date
+    type: date
   time_begin:
     label: Start Time
     type: time

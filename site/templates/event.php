@@ -13,17 +13,23 @@
         <div class="details">
           <div class="group">
             <h5 class="label">Presenters</h5>
-            <div class="data"><?= $page->contextualname()->html()?></div>
+            <div class="data">
+              <?= $page->contextualname()->html()?>
+            </div>
           </div>
 
           <div class="group">
-            <h5 class="label">Time</h5>
-            <div class="data"><?= $page->time_begin()->html() ?>–<?= $page->time_end()->html()?></div>
+            <h5 class="label">When</h5>
+            <div class="data">
+              <?= $page->time_begin()->html() ?>–<?= $page->time_end()->html()?> 
+            </div>
           </div>
 
           <div class="group">
             <h5 class="label">Location</h5>
-            <div class="data"><?= $page->address()->html()?></div>
+            <div class="data">
+              <?= $page->address()->html()?>
+            </div>
           </div>
         </div>
 
@@ -51,13 +57,13 @@
       <div class="column half previous">
         <? if ( $page->hasPrevVisible() ) { ?>
           <h6>Previous</h6>
-          <?= html::a($page->prevVisible()->url(), $page->prevVisible()->title()) ?>
+          <p><?= html::a($page->prevVisible()->url(), $page->prevVisible()->title()) ?></p>
         <? } ?>
       </div>
       <div class="column half next">
         <? if ( $page->hasNextVisible() ) { ?>
           <h6>Next</h6>
-          <?= html::a($page->nextVisible()->url(), $page->nextVisible()->title()) ?>
+          <p><?= html::a($page->nextVisible()->url(), $page->nextVisible()->title()) ?></p>
         <? } ?>
       </div>
     </article>
