@@ -11,7 +11,7 @@
     </article>
   </section>
 
-  <section class="description block-after">
+  <section class="description">
     <article>
       <div class="column full">
         <div class="bigdescription"><?= $page->description()->kirbytext() ?><div>
