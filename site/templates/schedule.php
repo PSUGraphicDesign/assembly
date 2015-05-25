@@ -18,6 +18,14 @@
   </section>
   */ ?>
 
+   <section>
+    <article>
+      <div class="column full line-after">
+        <div class="head-description"><?= $page->intro()->kirbytext() ?></div>
+      </div>
+    </article>
+  </section>
+
   <section class="map">
     <article>
       <div class="column full">
