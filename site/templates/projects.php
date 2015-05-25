@@ -6,7 +6,7 @@
   <section>
     <article>
       <div class="column full line-after">
-        <?= $page->intro()->kirbytext() ?>
+        <div class="headdescription"><?= $page->intro()->kirbytext() ?></div>
       </div>
     </article>
   </section>
