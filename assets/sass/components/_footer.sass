@@ -1,22 +1,38 @@
-.thefooter
+.the-footer
   background-color: $color-blue
   color: $color-white
 
-.sponsorfoot
+
+.sponsor-footer
   background-color: $color-lightblue
   color: $color-white
+  a
+    text-decoration: none
+  li
+    padding: .1rem
 
-.thebottom
+  .partners
+    margin: 0 auto
+    text-align: center
+
+.the-sponsors
+  +three-column-divide
+
+.the-bottom
   text-transform: uppercase
   letter-spacing: .15em
   font-size: .8em
   font-weight: 700
   text-decoration: none
 
-.thebottomright
+.the-bottom-right
   text-align: right
-  text-decoration: none
   margin-right: 0
   text-transform: uppercase
   letter-spacing: .15em
   font-size: .8em
+  font-weight: 700
+  a
+    text-decoration: none
+  a:hover
+    color: $color-black
