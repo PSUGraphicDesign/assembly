@@ -6,7 +6,7 @@
   <section>
     <article>
       <div class="column full line-after">
-        <div class="headdescription"><?= $page->intro()->kirbytext() ?></div>
+        <div class="head-description"><?= $page->intro()->kirbytext() ?></div>
       </div>
     </article>
   </section>
@@ -16,6 +16,17 @@
   <section class="project-list">
 
     <article>
+
+      <? foreach ( $day->$events as $event ) { ?>
+        <ul>
+          <li>
+            <div class="column third">
+              <h4><?= $event->contextualname()->html()?><h4>
+            </div>
+          </li>
+        </ul>
+
+      <? } ?>
       
         <ul>
           <? foreach ( $projects as $project ) { ?>
