@@ -1,9 +1,4 @@
-.the-footer
-  background-color: $color-blue
-  color: $color-white
-
-
-.sponsor-footer
+.credits
   background-color: $color-lightblue
   color: $color-white
   a
@@ -15,23 +10,30 @@
     margin: 0 auto
     text-align: center
 
-.the-sponsors
-  +three-column-divide
+  .sponsor-list
+    +divide-columns(3)
+    +tablet
+      +divide-columns(2)
+    +mobile
+      +divide-columns(initial)
 
-.the-bottom
-  text-transform: uppercase
-  letter-spacing: .15em
-  font-size: .8em
-  font-weight: 700
-  text-decoration: none
+.last
+  background-color: $color-blue
+  color: $color-white
 
-.the-bottom-right
-  text-align: right
-  margin-right: 0
-  text-transform: uppercase
-  letter-spacing: .15em
-  font-size: .8em
-  font-weight: 700
+  .copyright, .author
+    text-transform: uppercase
+    letter-spacing: .15em
+    font-size: .8em
+    font-weight: 700
+    text-decoration: none
+
+  .copyright
+    text-align: left
+
+  .author
+    text-align: right
+
   a
     text-decoration: none
   a:hover
