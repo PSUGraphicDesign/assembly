@@ -30,7 +30,7 @@
     <section class="day">
       <article class="day-banner">
         <div class="column full line-after">
-          <h4><?= $day->date('l, M jS') ?></h4>
+          <h4><?= $day->title()->html() ?></h4>
         </div>
       </article>
       <article class="events">
