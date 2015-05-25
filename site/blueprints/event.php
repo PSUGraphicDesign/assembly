@@ -9,7 +9,7 @@ fields:
     label: Title
     type: text
   date:
-    label: date
+    label: Date
     type: date
   time_begin:
     label: Start Time

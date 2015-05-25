@@ -12,7 +12,7 @@
       <div class="column two-thirds event-info">
         <div class="details">
           <div class="group">
-            <h5 class="label">Presenters</h5>
+            <h5 class="label">Who</h5>
             <div class="data">
               <?= $page->contextualname()->html()?>
             </div>
@@ -21,12 +21,14 @@
           <div class="group">
             <h5 class="label">When</h5>
             <div class="data">
+              <?= $page->date('l, F j') ?>
+              <br>
               <?= $page->time_begin()->html() ?>–<?= $page->time_end()->html()?> 
             </div>
           </div>
 
           <div class="group">
-            <h5 class="label">Location</h5>
+            <h5 class="label">Where</h5>
             <div class="data">
               <?= $page->address()->html()?>
             </div>
