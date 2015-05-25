@@ -14,7 +14,7 @@
   <section class="description block-after">
     <article>
       <div class="column full">
-        <?= $page->description()->kirbytext() ?>
+        <div class="bigdescription"><?= $page->description()->kirbytext() ?><div>
       </div>
     </article>
   </section>
@@ -22,7 +22,7 @@
   <section class="more">
     <article>
       <div class="column full">
-        <?= $page->small_description()->kirbytext() ?>
+        <div class="smalldescription"><?= $page->small_description()->kirbytext() ?></div>
       </div>
     </article>
   </section>
