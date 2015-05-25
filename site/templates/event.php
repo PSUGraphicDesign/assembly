@@ -45,13 +45,13 @@
       <div class="column half previous">
         <? if ( $page->hasPrevVisible() ) { ?>
           <h6>Previous</h6>
-          <?= html::a($page->prevVisible()->url(), $page->prevVisible()->title()) ?>
+          <p><?= html::a($page->prevVisible()->url(), $page->prevVisible()->title()) ?></p>
         <? } ?>
       </div>
       <div class="column half next">
         <? if ( $page->hasNextVisible() ) { ?>
           <h6>Next</h6>
-          <?= html::a($page->nextVisible()->url(), $page->nextVisible()->title()) ?>
+          <p><?= html::a($page->nextVisible()->url(), $page->nextVisible()->title()) ?></p>
         <? } ?>
       </div>
     </article>
