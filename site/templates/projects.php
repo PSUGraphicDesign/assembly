@@ -25,6 +25,7 @@
             </h4>
           </div>
         </div>
+
         <div class="column two-thirds">
           <?= $project->description()->kirbytext() ?>
         </div>
