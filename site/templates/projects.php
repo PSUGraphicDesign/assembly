@@ -16,17 +16,16 @@
       <article class="project">
         <div class="column third">
           <div class="projectname">
-            <h4>
-
-              <? if ( $events = $project->events() ) { ?>
-            <ul>
-              <? foreach ( $events as $event ) { ?>
-                <li><?= html::a($event->url(), $project->title()) ?></li>
-              <? } ?>
-            </ul>
-          <? } ?></h4>
-          </div>
+  <h4>
+    <? if ( $event = $project->events()->first() ) { ?>
+      <?= html::a($event->url(), $project->title()) ?>
+    <? } else { ?>
+      <?= $project->title() ?>
+    <? } ?>
+  </h4>
+</div>
         </div>
+
         <div class="column two-thirds">
           <?= $project->description()->kirbytext() ?>
 
