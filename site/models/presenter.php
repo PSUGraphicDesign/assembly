@@ -10,4 +10,8 @@
   public function year () {
     return $this->presenters()->year();
   }
+
+  public function name () {
+    return $this->title();
+  }
 }

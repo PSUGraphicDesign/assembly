@@ -10,7 +10,7 @@
 
     <article>   
       <div class="column two-thirds event-info">
-        <div class="details">
+        <div class="event-info-group details">
           <div class="group">
             <h5 class="label">Who</h5>
             <div class="data">
@@ -35,15 +35,26 @@
           </div>
         </div>
 
-        <div class="description">
+        <div class="event-info-group description">
           <?= $page->description()->kirbytext() ?>
         </div>
 
         <? if ($page->location()) { ?>
-          <div class="map">
+          <div class="event-info-group map">
             <div id="map" class="map-container" data-center-lat="<?= $page->location()->json('lat') ?>" data-center-lng="<?= $page->location()->json('lng') ?>"></div>
           </div>
         <? } ?>
+
+        <div class="event-info-group other-events">
+          <? if ( $associated_events && $associated_events->count() ) { ?>
+            <h4>Other Events from <?= $page->associated_project()->title() ?></h4>
+            <ul>
+              <? foreach ( $associated_events as $other ) { ?>
+                <li><?= html::a($other->url(), $other->title()) ?></li>
+              <? } ?>
+            </ul>
+          <? } ?>
+        </div>
 
       </div>     
 

@@ -2,22 +2,22 @@
 
       <section class="credits">
         <article>
-          <div class="column quarter partners">
+          <div class="column quarter mobile-half partners">
             <a href="http://www.pdx.edu/the-arts/">
              <img src="/assets/images/PSU.png">
             </a>
           </div>
-          <div class="column quarter partners">
+          <div class="column quarter mobile-half partners">
             <a href="http://psusocialpractice.org">
               <img src="/assets/images/PSUSOC.png">
             </a>
           </div>
-          <div class="column quarter partners">
+          <div class="column quarter mobile-half partners">
             <a href="http://magnumphotos.com">
               <img src="/assets/images/Magnum.png">
             </a>
           </div>
-          <div class="column quarter partners">
+          <div class="column quarter mobile-half partners">
             <a href="http://www.pps.k12.or.us/schools/king/">
               <img src="/assets/images/KSMoCA.png">
             </a>
