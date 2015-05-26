@@ -18,7 +18,7 @@
           <div class="projectname">
             <h4>
               <? if ( $event = $project->events()->first() ) { ?>
-                <?= html::a($event->url(), $event->title()) ?>
+                <?= html::a($event->url(), $project->title()) ?>
               <? } else { ?>
                 <?= $project->title() ?>
               <? } ?>
