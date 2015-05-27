@@ -39,7 +39,7 @@
   }
 
   public static function random_background () {
-    return "/assets/images/backgrounds/bg-" . rand(0, 5) . ".svg";
+    return static::asset('images', 'backgrounds/bg-' . rand(0, 5) . '.svg');
   }
 
   public static function sponsors_in_chunks ($chunks = 3) {
@@ -47,7 +47,7 @@
     $sponsors_per_chunk = ceil(count($sponsors) / $chunks);
     return array_chunk($sponsors, $sponsors_per_chunk);
   }
-  
+
   public static function asset ($type, $filename) {
     return site()->url() . '/assets/' . $type . '/' . $filename;
   }
