@@ -4,22 +4,22 @@
         <article>
           <div class="column quarter mobile-half partners">
             <a href="http://www.pdx.edu/the-arts/">
-             <img src="/assets/images/PSU.png">
+             <img src="<?= AB::asset('images', 'PSU.png') ?>">
             </a>
           </div>
           <div class="column quarter mobile-half partners">
             <a href="http://psusocialpractice.org">
-              <img src="/assets/images/PSUSOC.png">
+              <img src="<?= AB::asset('images', 'PSUSOC.png') ?>">
             </a>
           </div>
           <div class="column quarter mobile-half partners">
             <a href="http://magnumphotos.com">
-              <img src="/assets/images/Magnum.png">
+              <img src="<?= AB::asset('images', 'Magnum.png') ?>">
             </a>
           </div>
           <div class="column quarter mobile-half partners">
             <a href="http://www.pps.k12.or.us/schools/king/">
-              <img src="/assets/images/KSMoCA.png">
+              <img src="<?= AB::asset('images', 'KSMoCA.png') ?>">
             </a>
           </div>
         </article>
