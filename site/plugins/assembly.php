@@ -47,4 +47,8 @@
     $sponsors_per_chunk = ceil(count($sponsors) / $chunks);
     return array_chunk($sponsors, $sponsors_per_chunk);
   }
+  
+  public static function asset ($type, $filename) {
+    return site()->url() . '/assets/' . $type . '/' . $filename;
+  }
 }

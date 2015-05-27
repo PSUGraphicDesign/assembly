@@ -1,18 +1,12 @@
-window.Assembly = window.Assembly || {
-  Classes: {},
-  UI: {},
-  Storage: {}
-};
-
 window.Assembly.Storage.map_marker_inactive = {
-  url: '/assets/images/map/pin-inactive.png',
+  url: window.Assembly.Storage.base_url + '/assets/images/map/pin-inactive.png',
   size: new google.maps.Size(24, 50),
   origin: new google.maps.Point(0,0),
   anchor: new google.maps.Point(12, 50)
 };
 
 window.Assembly.Storage.map_marker_active = {
-  url: '/assets/images/map/pin-active.png',
+  url: window.Assembly.Storage.base_url + '/assets/images/map/pin-active.png',
   size: new google.maps.Size(24, 50),
   origin: new google.maps.Point(0,0),
   anchor: new google.maps.Point(12, 50)
