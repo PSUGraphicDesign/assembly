@@ -1,5 +1,5 @@
 <? return function ($site, $pages, $page) {
-  return [
+  return array(
     'projects' => $page->children()
-  ];
+  );
 };

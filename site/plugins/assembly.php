@@ -4,10 +4,10 @@
   }
 
   public static function body_classes () {
-    $classes = [
+    $classes = array(
       page()->uid(),
       page()->template()
-    ];
+    );
 
     $classes = array_filter($classes, function($class) {
       return !preg_match('/^\d+$/', $class);
@@ -17,7 +17,7 @@
   }
 
   public static function link_for ( $page, $title ) {
-    return html::a($page->url(), $title, ['class' => ($page->isOpen() ? 'active' : null)]);
+    return html::a($page->url(), $title, array('class' => ($page->isOpen() ? 'active' : null)));
   }
 
   public static function current_year () {

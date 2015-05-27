@@ -1,3 +1,3 @@
 <? return function ($site, $pages, $page) {
-  return [];
+  return array();
 };
