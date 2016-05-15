@@ -21,7 +21,7 @@
   }
 
   public static function current_year () {
-    return page(date('Y'));
+    return site()->current_year()->toPage();
   }
 
   public static function contextual_year () {

@@ -17,3 +17,12 @@ fields:
   social_links:
     label: Social Media Links
     type: textarea
+  current_year:
+    label: Current Assembly Year
+    type: select
+    options: query
+    query:
+      page: '/'
+      fetch: pages
+      template: year
+
