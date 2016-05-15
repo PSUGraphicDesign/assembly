@@ -3,7 +3,7 @@
 	url = https://github.com/getkirby/kirby.git
 [submodule "panel"]
 	path = panel
-	url = https://github.com/AugustMiller/panel.git
+	url = https://github.com/getkirby/panel.git
 [submodule "site/fields/place"]
 	path = site/fields/place
 	url = https://github.com/AugustMiller/kirby-place-field.git
